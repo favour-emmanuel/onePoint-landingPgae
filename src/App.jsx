@@ -13,7 +13,7 @@ function App() {
       <Navbar />
       <Hero />
       <Navball cartItemsCount={cartItems.length} />
-      <Cart cartItems={cartItems} onClear={() => setCartItems([])} />
+      <Cart />
       <Example />
     </>
   );
