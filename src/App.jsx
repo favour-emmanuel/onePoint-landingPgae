@@ -6,8 +6,6 @@ import Navball from "./components/Navball";
 import Example from "./components/Example";
 
 function App() {
-  const [cartItems, setCartItems] = useState(["product1", "product2"]);
-
   return (
     <>
       <Navbar />
