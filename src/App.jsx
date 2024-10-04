@@ -1,15 +1,17 @@
 import React from "react";
-import Example from "./components/Example";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
+import About from "./components/About";
+import Service from "./components/Service";
 
 function App() {
   return (
-    <>
+    <div id="/">
       <Navbar />
       <Hero />
-      <Example />
-    </>
+      <About />
+      <Service />
+    </div>
   );
 }
 

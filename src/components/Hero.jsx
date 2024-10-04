@@ -1,26 +1,40 @@
-import React from 'react';
-import atmImage from '../assets/Group11.png';
+import React from "react";
+import atmImage from "../assets/Group11.png";
 
 const Hero = () => {
   return (
-    <div className='w-full py-[40px]'>
-        <div className='max-w-[1240px] grid md:grid-cols-2 gap-12  place-items-center'>
-        <div className='flex flex-col'>
-            <p className='text-appYellow text-sm italic'>Let's Deal with <span>_____ </span></p>
-            <h1 className='heading my-2'>Your Gateway</h1>
-            <h1 className='heading'>To<span className='w-full bg-appYellow py-1 text-appBlack px-2 ml-2 rounded-md'>Modern Finance</span></h1>
-            <p className='text-[18px] my-3 font-normal text-appGray'>Empower your financial journey with cutting-edge technology and personalized solutions.</p>
-            <div className='mt-10'>
-                <button className='bigBtnYellow'>Sign In</button>
-                <button className='bigBtnBlack ml-3'>Learn More</button>
+    <>
+      <div className="px-7 lg:px-14 lg:py-14 w-full absolute z-[99] lg:bottom-[-2.5rem] top-[9rem]">
+        <div className="w-full flex flex-col lg:flex-row justify-between gap-x-16">
+          <div className="w-full max-w-[40rem]">
+            <p className="text-appYellow text-sm italic my-1">
+              Let's Deal with <span>_____ </span>
+            </p>
+            <h1 className="lg:text-6xl font-semibold text-4xl mb-7">
+              Your Gateway
+            </h1>
+            <h1 className="lg:text-6xl text-5xl">
+              To
+              <span className="w-full bg-appYellow font-semibold py-1 text-appBlack px-2 ml-2 rounded-md">
+                Modern Finance
+              </span>
+            </h1>
+            <p className="text-[18px] my-6 w-full max-w-[36rem] font-normal text-appGray">
+              Empower your financial journey with cutting-edge technology and
+              personalized solutions.
+            </p>
+            <div className="my-10 flex gap-6">
+              <button className="bigBtnYellow">Sign In</button>
+              <button className="bigBtnBlack ml-3">Learn More</button>
             </div>
+          </div>
+          <div className="">
+            <img src={atmImage} alt="/" className="w-[500px]" />
+          </div>
         </div>
-        <div>
-        <img src={atmImage} alt="/" className='w-[500px]' />
-        </div>
-        </div>
-    </div>
-  )
-}
+      </div>
+    </>
+  );
+};
 
-export default Hero
+export default Hero;
