@@ -42,20 +42,24 @@ const Navbar = () => {
           <div
             className={
               nav
-                ? "fixed left-0 top-0 w-[80%] z-40 h-full border-r border-r-gray-900 bg-appBlack ease-in-out duration-500"
+                ? "fixed left-0 top-0 w-[80%] z-40 h-full pl-8 border-r border-r-gray-900 bg-appBlack ease-in-out duration-500"
                 : "fixed left-[-100%]"
             }
           >
-            <ul className="flex flex-col items-center mt-20 text-[15px] text-[#cfcfcf]">
+            <ul className="flex flex-col  mt-16 text-[15px] text-[#cfcfcf]">
               {navItem.map((nav, index) => (
-                <li className="cursor-pointer" key={index} onClick={() => {}}>
+                <li
+                  className="cursor-pointer my-3 hover:text-appYellow/60"
+                  key={index}
+                  onClick={() => {}}
+                >
                   <Link to={nav.path} smooth={true} duration={500}>
                     {nav.label}
                   </Link>
                 </li>
               ))}
             </ul>
-            <div className="mt-10 flex justify-center items-center">
+            <div className="mt-10 flex ">
               <button className="mobileButton">Sign Up</button>
             </div>
           </div>

@@ -4,7 +4,7 @@ import atmImage from "../assets/Group11.png";
 const Hero = () => {
   return (
     <>
-      <div className="px-7 lg:px-14 lg:py-14 w-full absolute z-[99] lg:bottom-[-2.5rem] top-[9rem]">
+      <div className="px-7 lg:px-14 lg:py-14 w-full absolute lg:bottom-[-2.5rem] top-[9rem]">
         <div className="w-full flex flex-col lg:flex-row justify-between gap-x-16">
           <div className="w-full max-w-[40rem]">
             <p className="text-appYellow text-sm italic my-1">

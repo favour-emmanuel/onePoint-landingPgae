@@ -31,7 +31,8 @@ const About = () => {
               index === 0
                 ? "bg-appYellow text-black w-full max-w-[9rem] flex justify-center lg:py-3 px-2.5 rounded-md"
                 : ""
-            } text-appGray lg:text-lg text-base font-semibold px-4 py-2 rounded`}
+            } text-appGray lg:text-lg text-base font-semibold px-4 py-2.5 lg:my-0 my-1
+             rounded`}
             key={index}
           >
             {tab.label}
