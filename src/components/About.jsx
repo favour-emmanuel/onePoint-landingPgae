@@ -10,7 +10,7 @@ const About = () => {
     { label: "Financial Tools" },
   ];
   return (
-    <div id="about" className="lg:px-14 px-7 lg:py-16 py-10 lg:mt-0 mt-[25rem]">
+    <div id="about" className="lg:px-14 px-7 lg:py-20 py-10 lg:mt-0 mt-[25rem]">
       <div className="flex flex-col lg:flex-row justify-between">
         <h1 className="lg:text-5xl text-3xl font-semibold w-full max-w-[26rem]">
           Discover the <span className="text-appYellow">Future</span> of Finance
