@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-scroll";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
+import { navItem } from "../data/data";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -26,14 +27,6 @@ const Navbar = () => {
   //     window.removeEventListener("scroll", handleScroll);
   //   };
   // }, []);
-
-  const navItem = [
-    { label: "Home", path: "home" },
-    { label: "Service", path: "service" },
-    { label: "About Us", path: "about" },
-    { label: "Blog", path: "blog" },
-    { label: "Contact", path: "contact" },
-  ];
 
   return (
     <>
