@@ -2,15 +2,20 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-scroll";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { navItem } from "../data/data";
+import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const [sticky, setSticky] = useState(false);
+  const navigate = useNavigate();
 
   const handleNav = () => {
     setNav(!nav);
   };
 
+  const handleNavigate = () => {
+    navigate("/signup");
+  };
   // useEffect(() => {
   //   const handleScroll = () => {
   //     const heroHeight = document.querySelector(".heroScroll").offsetHeight;
@@ -58,7 +63,9 @@ const Navbar = () => {
 
           {/* SIgn up Button */}
           <div className="hidden md:flex">
-            <button className="btnYellow">Sign Up</button>
+            <button className="btnYellow" onClick={handleNavigate}>
+              Sign Up
+            </button>
           </div>
 
           {/* Mobile Navigation */}

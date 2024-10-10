@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <>
       <div
-        id="home"
+        id="/"
         className="heroScroll px-7 lg:px-14 lg:py-16 w-full absolute lg:bottom-[-2.5rem] top-[9rem]"
       >
         <div className="w-full flex flex-col lg:flex-row justify-between gap-x-16">
