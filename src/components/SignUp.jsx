@@ -8,7 +8,7 @@ const SignUp = () => {
     <div className="py-10 w-full text-white">
       <div className="my-5 w-full flex justify-center flex-col items-center">
         <Link to="/" className="cursor-pointer">
-          <h1 className="flex items-center text-sm gap-3 text-appYellow">
+          <h1 className="flex items-center text-sm gap-3 text-white">
             Go back to Home
             <Icon icon="ic:baseline-home" className="text-lg" />
           </h1>
